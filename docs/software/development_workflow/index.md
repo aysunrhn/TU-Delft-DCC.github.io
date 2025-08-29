@@ -5,8 +5,9 @@
 # Uncomment and populate the next line accordingly
 date: 2025-02-24
 
-# We use this key to indicate the last modified date [automatic entry]
-date-modified: last-modified
+# We use this key to indicate the last modified date [manual entry, use YYYY-MM-DD]
+# Uncomment and populate the next line accordingly
+date-modified: 2025-07-11
 
 # Do not modify
 lang: en
@@ -83,6 +84,15 @@ Managing your environments and dependencies.
 
 ::: {.learn-more}
 [Learn more »](./envs_dependencies.md)
+:::
+:::
+
+::: {.feature}
+### {{< fa diagram-successor >}} Workflow Management 
+Tools for writing and managing workflows.
+
+::: {.learn-more}
+[Learn more »](./workflow_management.md)
 :::
 :::
 

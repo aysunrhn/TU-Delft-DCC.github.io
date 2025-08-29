@@ -5,8 +5,9 @@
 # Uncomment and populate the next line accordingly
 #date: YYYY-MM-DD
 
-# We use this key to indicate the last modified date [automatic entry]
-date-modified: last-modified
+# We use this key to indicate the last modified date [manual entry, use YYYY-MM-DD]
+# Uncomment and populate the next line accordingly
+#date-modified: YYYY-MM-DD
 
 # Do not modify
 lang: en
@@ -130,5 +131,4 @@ Common next steps after obtaining a VPS and storage include initial configuratio
 
 - [Install Docker](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04)
 - [Configure Docker for use as non-root](https://docs.docker.com/engine/install/linux-postinstall/)
-- [Configure a runner for the TU Delft Gitlab](./gitlab/gitlab_docker.md)
-- [Apache Web Server](./apache_webserver.md)
+- [Configure a runner for the TU Delft Gitlab](../software/automation/gitlab/gitlab_docker.md)

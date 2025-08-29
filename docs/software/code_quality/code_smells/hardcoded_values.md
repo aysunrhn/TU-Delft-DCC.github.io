@@ -5,8 +5,9 @@
 # Uncomment and populate the next line accordingly
 date: 2025-02-03
 
-# We use this key to indicate the last modified date [automatic entry]
-date-modified: last-modified
+# We use this key to indicate the last modified date [manual entry, use YYYY-MM-DD]
+# Uncomment and populate the next line accordingly
+date-modified: 2025-07-11
 
 # Do not modify
 lang: en
@@ -67,7 +68,8 @@ def check_temperature(temperature):
         print("It's too cold!")
 ```
 
-### Issues
+#### Issues
+
 - The value of pi is hard-coded as `3.14`, which can lead to precision issues.
 - The temperature thresholds (30, 10) are buried in the logic, making them difficult to modify.
 - The meaning of 30 and 10 is unclear - are they for a specific region, season, or use case?
