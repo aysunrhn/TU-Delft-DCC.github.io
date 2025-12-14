@@ -6,7 +6,7 @@
 date: 2025-08-27
 
 # We use this key to indicate the last modified date [manual entry, use YYYY-MM-DD]
-date-modified: 2025-08-27
+date-modified: 2025-09-19
 
 # Do not modify
 lang: en
@@ -40,11 +40,11 @@ corresponding: Manuel G. Garcia
 # Meaningful keywords, newline separated [manual entry]
 # Uncomment and populate the next line and list accordingly
 categories: 
-- infrastructure
-- web server 
-- Apache
-- Nginx
-
+ - Infrastructure
+ - Servers
+ - VPS
+ - Apache
+ - Nginx
 ---
 
 If you want to host a website or a web application, you will need to work with a web server. The job of a web server is to serve content on the internet by acting as a middleman between client machines and server machines. When a client requests content, the web server processes that request and delivers the appropriate response. Popular web server software includes **Apache** and **Nginx**.
@@ -85,7 +85,7 @@ Hardware requirements depend on multiple factors including expected traffic volu
 
 ### Web server software
 
-Different web servers excel in different scenarios. The two most popular web servers are **Apache** and **Nginx**. Sometimes, the choice of a web server software is determined by your web application. For example, PHP applications can be served by either Apache (using mod_php) or Nginx (using PHP-FPM), while Node.js applications are commonly served by Nginx as a reverse proxy
+Different web servers excel in different scenarios. The two most popular web servers are **Apache** and **Nginx**. Sometimes, the choice of a web server software is determined by your web application. For example, PHP applications can be served by either Apache (using mod_php) or Nginx (using PHP-FPM), while Node.js applications are commonly served by Nginx as a reverse proxy.
 
 The following table provides a general comparison of key characteristics:
 

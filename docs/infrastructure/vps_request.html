@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-08-29">
 
-<title>Configure SSL certificates</title>
+<title>Request a VPS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -65,23 +31,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../docs/infrastructure/web_servers.html" rel="next">
-<link href="../../docs/infrastructure/moving_data.html" rel="prev">
+<link href="../../docs/infrastructure/vps_ssh.html" rel="next">
+<link href="../../docs/infrastructure/remote_servers.html" rel="prev">
 <link href="../../docs/img/cone.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dcd723bd3e2d8e65306aa707aebc1039.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-dcd723bd3e2d8e65306aa707aebc1039.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dcd723bd3e2d8e65306aa707aebc1039.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-68c8bffd90dad8f2b55c52d7b6410dc0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-68c8bffd90dad8f2b55c52d7b6410dc0.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-68c8bffd90dad8f2b55c52d7b6410dc0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d5f9be97d58292b63c6500f7d2b0531a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-57374690866e67f23fff911364d19601.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d5f9be97d58292b63c6500f7d2b0531a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b87838516fd491c7318cc311eb8edcd8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
@@ -288,7 +255,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../docs/img/tud/logo_white_crop.png" alt="" class="navbar-logo">
+    <img src="../../docs/img/tud/logo_white_crop.png" alt="" class="navbar-logo light-content">
+    <img src="../../docs/img/tud/logo_white_crop.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -327,7 +295,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/" title="DCC GitHub" class="quarto-navigation-tool px-1" aria-label="DCC GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -337,7 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/infrastructure/getting_started.html"><img src="../../docs/img/gear.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Computing Infrastructure</strong></a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/remote_servers.html">Remote servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/VPS_SSL_Certs.html">Configure SSL certificates</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/infrastructure/getting_started.html"><img src="../../docs/img/gear.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Computing Infrastructure</strong></a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/remote_servers.html">Remote servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/vps_request.html">Request VPS</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -477,6 +444,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../docs/software/development_workflow/collaboration.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Collaboration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/software/development_workflow/software_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software design</span></a>
   </div>
 </li>
       </ul>
@@ -626,7 +599,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../docs/software/code_quality/code_smells/many_arguments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Many inputs</span></a>
+ <span class="menu-text">Many arguments</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -644,7 +617,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../docs/software/code_quality/code_smells/dead_code.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Commented out code</span></a>
+ <span class="menu-text">Dead code</span></a>
   </div>
 </li>
       </ul>
@@ -778,6 +751,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../docs/software/automation/github_ci_cd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub Actions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../docs/software/automation/gitlab_ci_cd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitLab pipelines</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../docs/software/automation/gitlab/gitlab_docker.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Continuous Integration with GitLab</span></a>
   </div>
@@ -790,12 +778,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
       </ul>
   </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/software/tools/tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tooling</span></a>
-  </div>
-</li>
+      </ul>
+  </li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -986,38 +970,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/VPS_request.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Request a VPS</span></a>
+  <a href="../../docs/infrastructure/vps_request.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Request VPS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/VPS_SSH.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setting up SSH tunneling</span></a>
+  <a href="../../docs/infrastructure/vps_ssh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Server connection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../docs/infrastructure/moving_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moving data to remote servers</span></a>
+ <span class="menu-text">Data transfer</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/VPS_SSL_Certs.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Configure SSL certificates</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/web_servers.html" class="sidebar-item-text sidebar-link">
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../docs/infrastructure/web_servers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Web servers</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/infrastructure/ssl_certificates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SSL certificates</span></a>
   </div>
 </li>
       </ul>
   </li>
+          <li class="sidebar-item">
+ <span class="menu-text"><br></span>
+  </li>
       </ul>
   </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../listings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><img src="../../docs/img/catalog.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Catalogue</strong></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -1029,16 +1028,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#what-this-documentation-will-help-achieve" id="toc-what-this-documentation-will-help-achieve" class="nav-link" data-scroll-target="#what-this-documentation-will-help-achieve">What this documentation will help achieve</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#toolssoftware" id="toc-toolssoftware" class="nav-link" data-scroll-target="#toolssoftware">Tools/Software</a></li>
   <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a>
   <ul class="collapse">
-  <li><a href="#step-1.-generate-.csr-file" id="toc-step-1.-generate-.csr-file" class="nav-link" data-scroll-target="#step-1.-generate-.csr-file">Step 1. Generate .csr file</a></li>
-  <li><a href="#step-2.-secure-copy-.csr-file-from-server-to-local-machine" id="toc-step-2.-secure-copy-.csr-file-from-server-to-local-machine" class="nav-link" data-scroll-target="#step-2.-secure-copy-.csr-file-from-server-to-local-machine">Step 2. Secure-copy .csr file from server to local machine</a></li>
-  <li><a href="#step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form" id="toc-step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form" class="nav-link" data-scroll-target="#step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form">Step 3. Submit Certificate Server Request to TU Delft ICT via TopDesk form</a></li>
+  <li><a href="#step-1-navigate-to-the-tu-delft-server-request-form" id="toc-step-1-navigate-to-the-tu-delft-server-request-form" class="nav-link" data-scroll-target="#step-1-navigate-to-the-tu-delft-server-request-form">Step 1: Navigate to the TU Delft server request form</a></li>
+  <li><a href="#step-2-fill-and-send-the-form-according-to-your-preferences-and-needs" id="toc-step-2-fill-and-send-the-form-according-to-your-preferences-and-needs" class="nav-link" data-scroll-target="#step-2-fill-and-send-the-form-according-to-your-preferences-and-needs">Step 2: Fill and send the form according to your preferences and needs</a></li>
   </ul></li>
-  <li><a href="#notes-and-next-steps" id="toc-notes-and-next-steps" class="nav-link" data-scroll-target="#notes-and-next-steps">Notes and Next Steps</a></li>
+  <li><a href="#initial-configuration-of-your-vps" id="toc-initial-configuration-of-your-vps" class="nav-link" data-scroll-target="#initial-configuration-of-your-vps">Initial Configuration of your VPS</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -1046,17 +1044,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/infrastructure/getting_started.html"><img src="../../docs/img/gear.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Computing Infrastructure</strong></a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/remote_servers.html">Remote servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/VPS_SSL_Certs.html">Configure SSL certificates</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/infrastructure/getting_started.html"><img src="../../docs/img/gear.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Computing Infrastructure</strong></a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/remote_servers.html">Remote servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/vps_request.html">Request VPS</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Configure SSL certificates</h1>
-</div>
+<h1 class="title">Request a VPS</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Infrastructure</div>
+    <div class="quarto-category">Servers</div>
+    <div class="quarto-category">VPS</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Last reviewed</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 29, 2025</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Last modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 19, 2025</p>
+    </div>
+  </div>
     
   </div>
   
@@ -1067,99 +1082,105 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script async="" defer="" src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>It is common practice to have web servers serving content over HTTPS, which is the secure version of HTTP. In order to do this and make the connection secure, you need an SSL certificate from a certificate signing authority.</p>
-<p>The role of the SSL certificate is to indicate the encryption of user data from a server exposed on the web. SSL is a key for encrypting information. When a website’s certificate is expired or invalid, or if it using a self-signed (unofficial) certificate, as a user you either get a warning saying, “go back to safety,” or can’t access the website over https - instead you see a message that says “Not Secure” in your web browser. This means that the certificate is not signed by an authority, so it’s not trusted.</p>
-<p>In theory, if your web server is universally accessible and doesn’t contain forms for users with personal or confidential information, there is no strict need for HTTPS connection. But, HTTPS is the modern standard and without it, visitors will have impression that the website is not safe. Therefore it is good practice to always have HTTPS on your web server.</p>
-</section>
-<section id="what-this-documentation-will-help-achieve" class="level2">
-<h2 class="anchored" data-anchor-id="what-this-documentation-will-help-achieve">What this documentation will help achieve</h2>
-<p>SSL certificates for TU Delft researchers and staff may be requested by contacting the ICT service desk. TU Delft ICT will order SSL certificates on your behalf from a trusted certificate signing authority.</p>
+<p>This guide describes the essentials for requesting and setting up a TU Delft managed Virtual Private Server (VPS).</p>
+<p>Common use cases for VPSs covered in these guides include:</p>
+<ul>
+<li><a href="../../docs/infrastructure/web_servers.html">Set up a web server</a></li>
+<li><a href="../../docs/software/automation/gitlab/gitlab_docker.html">Set up runners for TU Delft GitLab</a></li>
+<li><a href="../../docs/data/data_storage/project_drive_mounting.html">Mounting and handling storage drives such as a <em>Project Drive</em></a></li>
+</ul>
 </section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
 <ul>
-<li>TU Delft netID</li>
-<li>Linux-based VPS provided by TU Delft ICT</li>
-<li>(optional) 1-step SSH connection established (see instructions ___)</li>
+<li>TU Delft NetID</li>
+<li>Basic knowledge of Linux (if requesting a Linux server)</li>
 </ul>
 </section>
 <section id="toolssoftware" class="level2">
 <h2 class="anchored" data-anchor-id="toolssoftware">Tools/Software</h2>
 <ul>
-<li>None</li>
+<li>For Windows users, you will need a programming and runtime environment like Windows Subsystem for Linux (WSL) or an SSH client like <a href="https://www.putty.org/">PuTTY</a>.</li>
 </ul>
 </section>
 <section id="steps" class="level2">
 <h2 class="anchored" data-anchor-id="steps">Steps</h2>
 <ol type="1">
-<li>Generate .csr file</li>
-<li>Secure-copy .csr file from server to local machine</li>
-<li>Submit Certificate Server Request to TU Delft ICT via TopDesk form</li>
+<li>Navigate to the TU Delft server request form</li>
+<li>Fill and send the form according to your preferences and needs</li>
+<li>Receive confirmation of server deployment from TU Delft ICT</li>
+<li>Login to your server for the first time</li>
 </ol>
-<section id="step-1.-generate-.csr-file" class="level3">
-<h3 class="anchored" data-anchor-id="step-1.-generate-.csr-file">Step 1. Generate .csr file</h3>
-<p>The Certificate Signing Request (.csr) file is a file generated by you in a standard format that contains all the information the signing authority needs to create a signed certificate. You will need to include this .csr file in submitting your SSL certificate request form to TU Delft ICT, and you should generate it on your VPS directly. The instructions for generating a .csr file come from <a href="https://hostadvice.com/how-to/configure-apache-with-tls-ssl-certificate-on-ubuntu-18/">here</a>.</p>
-<p>SSH to your VPS (____ link if you have followed the process to connect directly, you can use: <code>username@localmachine ~ % ssh externalserveralias</code>)</p>
-<p>Enter following command in the terminal: <em>Note:</em> replace mydomain with your actual domain name:</p>
-<p><code>username@externalserver ~ % openssl req -new -newkey rsa:2048 -nodes -keyout mydomain.key -out mydomain.csr</code></p>
-<p>You will be prompted to answer a series of questions:</p>
+<section id="step-1-navigate-to-the-tu-delft-server-request-form" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-navigate-to-the-tu-delft-server-request-form">Step 1: Navigate to the TU Delft server request form</h3>
+<p>You can make a request for a server via the <a href="https://tudelft.topdesk.net/tas/public/ssp/content/detail/service?unid=71ba4c9678e041fd99dad8e7e11dd0e2">TopDesk self service portal</a>. If the link does not work, you can also navigate to the TopDesk portal homepage and type “Faculty managed Servers” in the search box. Alternatively, you can navigate to the form via:</p>
+<blockquote class="blockquote">
+<p>ICT SERVICES ⇾ IT FOR RESEARCH ⇾ FACULTY MANAGED SERVERS.</p>
+</blockquote>
+</section>
+<section id="step-2-fill-and-send-the-form-according-to-your-preferences-and-needs" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-fill-and-send-the-form-according-to-your-preferences-and-needs">Step 2: Fill and send the form according to your preferences and needs</h3>
+<p>The form is divided into three sections: “<em><strong>Caller</strong></em>”, “<em><strong>General Questions</strong></em>”, and “<em><strong>Technical Questions</strong></em>”.</p>
+<p><em><strong>Caller</strong></em> should contain the contact information of the main administrator of this server. If you select your name, the fields below should be auto-populated with your building, phone number, email, department/program, organizational unit, and (sometimes) room. If you are requesting the server on behalf of someone else, you can fill in their details instead.</p>
+<p>The last question in the <strong>Caller Details</strong> section access to the server by external users. Generally speaking, granting access to TU Delft-managed servers is not recommended, but if it is necessary you can add the contact details of the external party and the reason(s) for which they should have access. You will need to provide a company-affiliated email address for the external user, and the request may or may not be granted by ICT.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-info-circle" aria-label="info-circle"></i> Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Keep in mind that a server provides access to the backend of your application. If for example you want to deploy a web server to share your data widely, users <strong>do not</strong> need direct access to the server in order to access the data itself.</p>
+</div>
+</div>
+<p>The next section contains <em><strong>General Questions</strong></em> about the name and purpose of your server. If you plan to use this server ongoing into the future, you can either leave the field “Expiration Date” blank or add a date in 10+ years. TU Delft ICT will alert you when the expiration date you select is nearing. There you can also add the netIDs of your collaborators who should have access to the server</p>
+<p>The <em><strong>Technical Questions</strong></em> section asks you to specify an operating system and some other technical details about your server configuration.</p>
+<p>When requesting a VPS, users can choose from a range of predefined hardware and operating system configurations. The following operating systems are available: Windows Server 2019, Windows Server 2022, Red Hat Enterprise Linux (latest supported version), and Ubuntu (latest LTS version). If you are new to working with servers, generally the best choice may be “Basic configuration 4” (Ubuntu).</p>
+<p>All configurations have rather limited internal memory, so if you need more memory you can always <a href="../../docs/data/data_storage/project_drive_mounting.html">mounting additional storage drive(s) such as a Project Drive</a>. If additional processing capacity is needed, it can be requested via the ‘ICT malfunction’ or ‘Request ICT service’ forms in TOPdesk. This includes options such as increasing the number of processors, cores per processor, RAM, or disk storage. It may also reveal a reason to consider a physical server instead of a VPS.</p>
+<p>The next question deals with opening ports to the server through the TU Delft firewall. Ports are essentially gateways to the server that are specific to different purposes. For example, port 80 is opened to handle HTTP requests, port 20 is opened to handle SSH requests, port 3306 is opened to allow access to a MySQL database, and port 443 is opened to handle HTTPS requests. If you are planning to use your VPS as a webserver, ports 80 and 443 should be open. You can use this space to ask ICT to do so.</p>
+<p>The next section, FQDN, is the way you can refer to your server on the internet. The recommendation is a format like <code>&lt;servername&gt;.&lt;facultyabbreviation&gt;.tudelt.nl</code>. In general, it’s best to keep names relatively short and informative to make it easy to reference and remember.</p>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You should also be sure to check the instructions in the form and contact your faculty <a href="https://www.tudelft.nl/en/library/current-topics/research-data-management/r/support/data-stewardship/contact/">Data Steward</a> or <a href="https://intranet.tudelft.nl/en/-/faculty-it-manager">Faculty IT Manager</a> if you need further explanation.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="initial-configuration-of-your-vps" class="level2">
+<h2 class="anchored" data-anchor-id="initial-configuration-of-your-vps">Initial Configuration of your VPS</h2>
+<p>A few days after submitting the request, you will receive an email from ICT with login details. You can connect to your VPS via SSH (secure shell) using a command line interface (CLI). If you are in a Windows environment, it is recommended to install WSL or <a href="https://www.putty.org/">PuTTY</a> to be able to use the ssh command in a CLI. The Unix based systems (e.g., Mac, Ubuntu) contain SSH by default in their “Terminal” application. In order to login to your VPS, you need to first SSH to the bastion server with <code>ssh &lt;username&gt;@linux-bastion-ex.tudelft.nl</code> and then from there login to your server <code>ssh &lt;servername&gt;</code>. The first thing we recommend to do after logging into the server is to update the pre-installed packages:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Debian (Ubuntu)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">RedHat</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade</code></pre>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<pre><code>sudo yum update</code></pre>
+</div>
+</div>
+</div>
+<p>It would be also useful to set a password for the VPS when you log in. You can do that by <code>passwd</code> command.</p>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
 <ul>
-<li>Country name: 2 letter abbreviation for your country. Netherlands is NL.</li>
-<li>State or Province Name: this is where your org operates from. Zuid-Holland.</li>
-<li>Locality Name - name of the city your org operates from. Don’t use abbreviations in this field.</li>
-<li>Organisation Name - use your (organisation’s) full name.</li>
-<li>Organisational Unit Name - Use a department name ex. “IT Department” or “Library”</li>
-<li>Common Name - the FQDN that you are requesting an SSL certificate for.</li>
-<li>Email address</li>
-<li>Optional password (can skip step)</li>
-<li>Optional company name</li>
+<li><a href="../../docs/infrastructure/web_servers.html">Set up a web server</a></li>
+<li><a href="../../docs/software/automation/gitlab/gitlab_docker.html">Set up runners for TU Delft GitLab</a></li>
+<li><a href="../../docs/data/data_storage/project_drive_mounting.html">Mounting and handling storage drives such as a <em>Project Drive</em></a></li>
 </ul>
-<p>Your CSR file has now been generated. To find your CSR, take a look at the contents of your current working directory with the ls command. You should notice two new files ending with “.key” and “.csr” respectively. For example:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">username@externalserver</span> ~ % ls</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--.</span> 1 root root 1082 Jan 31 12:10 mydomain.csr</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-------.</span> 1 root root 1704 Jan 31 12:10 mydomain.key</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The .key file should be kept private on your server. The .csr file is your certificate signing request, and can be sent to a Certificate Authority.</p>
-</section>
-<section id="step-2.-secure-copy-.csr-file-from-server-to-local-machine" class="level3">
-<h3 class="anchored" data-anchor-id="step-2.-secure-copy-.csr-file-from-server-to-local-machine">Step 2. Secure-copy .csr file from server to local machine</h3>
-<p>In this step we use Secure Copy protocol (SCP) which is a means of securely transferring files between hosts on a network. This example will save the file in the Home directory, but you can also save it into any other project folder on your machine.</p>
-<p>Navigate to directory of choice. In this case, we’ll use home.</p>
-<p><code>username@localmachine .ssh % cd ~</code></p>
-<p>Use <code>scp</code> to secure copy .csr file from your external server. If you have followed ___these steps to enable 1-step SSH access to your VPS, you can do this using the alias you set, and the .csr file name which should be your external server FQDN.csr. Don’t forget to add the <code>.</code> at the end of the command.</p>
-<p><code>username@localmachine ~ % scp externalserveralias:~/external-server-FQDN.nl.csr .</code></p>
-<p>Check to see that it saved on your local machine using <code>ls</code>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">username@localmachine</span> ~ % ls</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Applications</span>        Movies</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Desktop</span>             Music</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Documents</span>           Pictures</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Downloads</span>           Public</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Dropbox</span>             external-server-FQDN.nl.csr</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Library</span>             surfdrive</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If you have not set up 1-step SSH connection to your VPS, the file transfer procedure from the VPS to your local computer is composed of two steps:</p>
-<ol type="1">
-<li>From the VPS to the intermediary server, and</li>
-<li>From the intermediary server to the local computer.</li>
-</ol>
-<p>For the first step use:</p>
-<p><code>scp &lt;path to the csr file&gt; &lt;netid&gt;@&lt;intermediary_server_address&gt;:&lt;a path in the intermediary_server&gt;</code> (e.g., <code>scp thredds.tudelft.nl.csr mynetid@linux-bastion-ex.tudelft.nl:~</code>).</p>
-<p>In the second step, you need to copy the file from the intermediary server to the local computer using the same command but with a different source and destination:</p>
-<p><code>scp &lt;netid&gt;@&lt;intermediary_server_address&gt;:&lt;the path in the intermediary_server to the selected file&gt; &lt;a path in the local computer&gt;</code> (e.g., <code>scp mynetid@linux-bastion-ex.tudelft.nl:~/thredds.tudelft.nl.csr .</code>)</p>
-<p>Please note, if you are a Windows user, for the second step you need to install cygwin and ssh to the intermediary server using:</p>
-<p><code>ssh &lt;netid&gt;@&lt;intermediary_server_address&gt;</code> (e.g., <code>ssh mynetid@linux-bastion-ex.tudelft.nl</code>).</p>
-</section>
-<section id="step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form" class="level3">
-<h3 class="anchored" data-anchor-id="step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form">Step 3. Submit Certificate Server Request to TU Delft ICT via TopDesk form</h3>
-<p>TU Delft ICT will use the information stored in your .csr file to get the SSL certificate from the signing authority and send the SSL certificate to you. In order to make this request, you must attach your .csr file from the previous step.</p>
-<p>Navigate to TopDesk form for TU Delft. <a href="https://tudelft.topdesk.net/tas/public/ssp/content/serviceflow?unid=62aeef08314247f3aba7ff2297d011da">TOPdesk SSL certificate server request</a>.</p>
-<p>Choose “Attach file” and navigate to directory where .csr file is stored** (in this example, it is in “Home”). Select “external-server-FQDN.nl.csr”.</p>
-<p>Submit request. You can delete this file from your home directory after you submit the form.</p>
-<p>ICT will respond with a SSL certificate (with the extension .crt, .cer, and/or .pem) that comes from the signing authority. When you have this, you can configure the SSL certificate to work with the web server on your VPS.</p>
-</section>
-</section>
-<section id="notes-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="notes-and-next-steps">Notes and Next Steps</h2>
-<p>SSL certificates can expire - TU Delft ICT will let you know when this is about to happen. To renew, you will need a new .csr file. You can send this to TU Delft ICT via the original TopDesk form and they will forward to the signing authority.</p>
-<p>To use your SSL certificate with your web server, you need to change some configuration settings based on the web server you are using (e.g., Apache, nginx). See ___Set up an Apache web server for more information.</p>
+<p>We will add more documentation when other common cases come to our attention, so please <a href="../../CONTRIBUTING.html">reach out to us</a> with your questions or suggestions.</p>
 
 
 </section>
@@ -1229,13 +1250,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1579,13 +1601,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../docs/infrastructure/moving_data.html" class="pagination-link" aria-label="Moving data to remote servers">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Moving data to remote servers</span>
+      <a href="../../docs/infrastructure/remote_servers.html" class="pagination-link" aria-label="Remote servers">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Remote servers</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../docs/infrastructure/web_servers.html" class="pagination-link" aria-label="Web servers">
-        <span class="nav-page-text">Web servers</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../docs/infrastructure/vps_ssh.html" class="pagination-link" aria-label="Server connection">
+        <span class="nav-page-text">Server connection</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -6,7 +6,7 @@
 date: 2025-07-04
 
 # We use this key to indicate the last modified date [manual entry]
-date-modified: 2025-07-07
+date-modified: 2025-09-19
 
 # Do not modify
 lang: en
@@ -40,15 +40,16 @@ maintainer_1: Elviss Dvinskis
 # Meaningful keywords, newline separated [manual entry]
 # Uncomment and populate the next line and list accordingly
 categories: 
+ - Data
+ - Storage
  - Project Data Storage
- - vps
-
+ - VPS
 ---
 
 *Project drive* storage can be mounted and made accessible in your TU Delft Virtual Private Server (VPS).
 
 ### Prerequisites
-- A TU Delft [VPS](../../infrastructure/VPS_request.md)
+- A TU Delft [VPS](../../infrastructure/vps_request.md)
 - A TU Delft [*Project Data Storage* drive](./project_drive_request.md)
 
 ### Steps
@@ -84,7 +85,7 @@ Content within *webdata* is under password protection. Typing your username and 
 :::
 
 #### **Step 2. Connect to your TU Delft VPS via SSH**
-Follow instructions in the TU Delft ICT email from initial server setup or follow our guide to [configure via SSH](../../infrastructure/VPS_SSH.md).
+Follow instructions in the TU Delft ICT email from initial server setup or follow our guide to [configure via SSH](../../infrastructure/vps_ssh.md).
 
 #### **Step 3. Create a new directory as the mounting point**
 The convention is to create mounting points in the folder `/media`. Navigate to the directory and create a new folder with:

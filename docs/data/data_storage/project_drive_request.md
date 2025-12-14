@@ -7,7 +7,7 @@ date: 2025-08-26
 
 # We use this key to indicate the last modified date [manual entry, use YYYY-MM-DD]
 # Uncomment and populate the next line accordingly
-date-modified: 2025-08-26
+date-modified: 2025-09-19
 
 # Do not modify
 lang: en
@@ -42,8 +42,9 @@ corresponding: Raúl Ortiz Merino
 # Meaningful keywords, newline separated [manual entry]
 # Uncomment and populate the next line and list accordingly
 categories: 
- - data
- - storage
+ - Data
+ - Storage
+ - Project Data Storage
 
 ---
 
@@ -53,7 +54,7 @@ TU Delft network drives are automatically mounted on TU Delft-managed computers 
 
 On macOS and Linux, there are a few additional steps needed to access *Project Drives*. The instructions can be found [here](https://filelist.tudelft.nl/Calendar/2024/08%20August/Project%20storage%20instructions.pdf). *(Last updated: August 2024)*
 
-It can also be accessed through [webdata.tudelft.nl](https://webdata.tudelft.nl/) using a WebDAV web link [staff-umbrella](https://webdata.tudelft.nl/staff-umbrella). To mount on a TU Delft Virtual Private Server, first follow the instructions [here](/docs/infrastructure/VPS_request.md), and then the instructions in the next guide [Mount *Project Drive* on server](project_drive_mounting.md).
+It can also be accessed through [webdata.tudelft.nl](https://webdata.tudelft.nl/) using a WebDAV web link [staff-umbrella](https://webdata.tudelft.nl/staff-umbrella). To mount on a TU Delft Virtual Private Server, first follow the instructions [here](/docs/infrastructure/vps_request.md), and then the instructions in the next guide [Mount *Project Drive* on server](project_drive_mounting.md).
 
 :::{.callout-note appearance="simple" icon="false"}
 ## {{< fa info-circle >}} Reminder
@@ -75,7 +76,7 @@ If you are accessing the *Project Data Storage (U:)* drive from outside the TU D
 #### **Step 1. Request storage via the TU Delft ICT form on TopDesk**
 You can make a request for data storage via a form available on the [TopDesk self-service portal](https://tudelft.topdesk.net/) (requires NetID sign-in); navigate to:
 
-> HOME ⇾ ICT SERVICES ⇾ IT WORKSPACE ⇾ DATA STORAGE ⇾ DATA STORAGE FOR RESEARCH: PROJECT DATA (U:) ⇾ APPLICATION FORM FOR DATA STORAGE
+> HOME ⇾ ICT SERVICES ⇾ IT WORKSPACE ⇾ DATA STORAGE ⇾ PROJECT DATA STORAGE - APPLICATION FORM
 
 #### **Step 2. Fill out and send the form according to your data storage preferences and requirements**
 The form has six main sections: "_**Caller**_", "_**Application**_", "_**Access for third parties**_", "_**Storage type**_", "_**Storage Requirements**_", and "_**Backup Retention**_".
