@@ -191,14 +191,14 @@ In practice, `uv` can replace `pip`, and often `virtualenv`, while also covering
 
 - `uv` does not replace system or distribution-level package managers (such as `conda`, `apt`, or `brew`)
 - It is best suited for managing Python-level dependencies on top of an existing Python interpreter
-- The python interpreter can come from the system, a virtual environment, or a `conda` environment
+- The Python interpreter can come from the system, a virtual environment, or a `conda` environment
 :::
 
-Getting started with `uv`:
-- `uv` manages Python dependencies, not your operating system or system libraries. Before starting, decide who owns the Python interpreter in your project:
+#### **Getting started with `uv`**
 
-1. Use `venv + uv`
-Use this when all dependencies are available from PyPI wheels
+`uv` manages Python dependencies, not your operating system or system libraries. Before starting, decide who owns the Python interpreter in your project:
+
+1. **Use `venv + uv`. Use this when all dependencies are available from PyPI wheels**
 
 - Create a new project
 ```bash
@@ -208,7 +208,7 @@ uv init
 ```
 - Create a virtual environment
 ```bash
-uv env --python 3.12 --seed
+uv venv --python 3.12 --seed
 ```
 Now you should have a `.venv/` directory and `pip` installed into it
 
@@ -229,8 +229,7 @@ Activating the virtual environment is optional, since the commands with `uv` are
 source .venv/bin/activate
 ```
 
-2. `conda + uv`
-Use this when you need non-Python libraries managed by `conda`
+2. **Use `conda + uv`. Use this when you need non-Python libraries managed by `conda`**
 
 - Create and activate a `conda` environment
 ```bash
@@ -266,22 +265,25 @@ This installs exactly what is declared in `pyproject.toml` and `uv.lock`
 ## {{< fa lightbulb >}} Some useful commands to make the most out of `uv`
 
 - `uv add --dev <package>`: add a development dependency
-- `uv pip list`: list installed Python pacakges
+- `uv pip list`: list installed Python packages
 - `uv pip tree`: show dependency tree
 - `uv run <command>`: run a command in the environment
 :::
 
-- What if you already have a `requirements.txt` file?
-  - You can migrate your project to `uv` in a straightforward manner and have `pyproject.toml` and `uv.lock` to become the core pieces to reproduce
-  ```bash
-  # Initialize uv
-  uv init
+#### **What if you already have a `requirements.txt` file?**
 
-  # Add everything from requirements.txt
-  uv add -r requirements.txt
-  ```
-  - After running the above commands, you should have a `pyproject.toml` file with the dependencies, where the versions are resolved and everything is installed into the environment
-  - With your `uv.lock` file, the `requirements.txt` file becomes obsolete. You can still keep it around for reference, but ideally you stop updating it manually
+- You can migrate your project to `uv` in a straightforward manner so that `pyproject.toml` and `uv.lock` become the core pieces for reproducing your environment
+
+```bash
+# Initialize uv
+uv init
+
+# Add everything from requirements.txt
+uv add -r requirements.txt
+```
+
+- After running the above commands, you should have a `pyproject.toml` file with the dependencies, where the versions are resolved and everything is installed into the environment
+- With your `uv.lock` file, the `requirements.txt` file becomes obsolete. You can still keep it around for reference, but ideally you stop updating it manually
 
 :::{.callout-note appearance="simple" icon="false"}
 ## {{< fa signs-post >}} Learn more

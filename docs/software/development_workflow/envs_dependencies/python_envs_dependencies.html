@@ -1271,13 +1271,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><code>uv</code> does not replace system or distribution-level package managers (such as <code>conda</code>, <code>apt</code>, or <code>brew</code>)</li>
 <li>It is best suited for managing Python-level dependencies on top of an existing Python interpreter</li>
-<li>The python interpreter can come from the system, a virtual environment, or a <code>conda</code> environment</li>
+<li>The Python interpreter can come from the system, a virtual environment, or a <code>conda</code> environment</li>
 </ul>
 </div>
 </div>
-<p>Getting started with <code>uv</code>: - <code>uv</code> manages Python dependencies, not your operating system or system libraries. Before starting, decide who owns the Python interpreter in your project:</p>
+</section>
+<section id="getting-started-with-uv" class="level4">
+<h4 class="anchored" data-anchor-id="getting-started-with-uv"><strong>Getting started with <code>uv</code></strong></h4>
+<p><code>uv</code> manages Python dependencies, not your operating system or system libraries. Before starting, decide who owns the Python interpreter in your project:</p>
 <ol type="1">
-<li>Use <code>venv + uv</code> Use this when all dependencies are available from PyPI wheels</li>
+<li><strong>Use <code>venv + uv</code>. Use this when all dependencies are available from PyPI wheels</strong></li>
 </ol>
 <ul>
 <li>Create a new project</li>
@@ -1288,7 +1291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Create a virtual environment</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> env <span class="at">--python</span> 3.12 <span class="at">--seed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> venv <span class="at">--python</span> 3.12 <span class="at">--seed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Now you should have a <code>.venv/</code> directory and <code>pip</code> installed into it</p>
 <ul>
 <li>Add dependencies</li>
@@ -1303,7 +1306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Activating the virtual environment is optional, since the commands with <code>uv</code> are by default run inside the environment.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="1">
-<li><code>conda + uv</code> Use this when you need non-Python libraries managed by <code>conda</code></li>
+<li><strong>Use <code>conda + uv</code>. Use this when you need non-Python libraries managed by <code>conda</code></strong></li>
 </ol>
 <ul>
 <li>Create and activate a <code>conda</code> environment</li>
@@ -1340,16 +1343,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout-body-container callout-body">
 <ul>
 <li><code>uv add --dev &lt;package&gt;</code>: add a development dependency</li>
-<li><code>uv pip list</code>: list installed Python pacakges</li>
+<li><code>uv pip list</code>: list installed Python packages</li>
 <li><code>uv pip tree</code>: show dependency tree</li>
 <li><code>uv run &lt;command&gt;</code>: run a command in the environment</li>
 </ul>
 </div>
 </div>
+</section>
+<section id="what-if-you-already-have-a-requirements.txt-file" class="level4">
+<h4 class="anchored" data-anchor-id="what-if-you-already-have-a-requirements.txt-file"><strong>What if you already have a <code>requirements.txt</code> file?</strong></h4>
 <ul>
-<li>What if you already have a <code>requirements.txt</code> file?
-<ul>
-<li>You can migrate your project to <code>uv</code> in a straightforward manner and have <code>pyproject.toml</code> and <code>uv.lock</code> to become the core pieces to reproduce</li>
+<li>You can migrate your project to <code>uv</code> in a straightforward manner so that <code>pyproject.toml</code> and <code>uv.lock</code> become the core pieces for reproducing your environment</li>
 </ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize uv</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> init</span>
@@ -1359,7 +1363,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>After running the above commands, you should have a <code>pyproject.toml</code> file with the dependencies, where the versions are resolved and everything is installed into the environment</li>
 <li>With your <code>uv.lock</code> file, the <code>requirements.txt</code> file becomes obsolete. You can still keep it around for reference, but ideally you stop updating it manually</li>
-</ul></li>
 </ul>
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
