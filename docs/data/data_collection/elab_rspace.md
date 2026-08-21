@@ -7,7 +7,7 @@ date: 2025-05-08
 
 # We use this key to indicate the last modified date [manual entry, use YYYY-MM-DD]
 # Uncomment and populate the next line accordingly
-date-modified: 2025-09-19
+date-modified: 2026-07-29
 
 # Do not modify
 lang: en
@@ -21,8 +21,8 @@ title: eLabJournal and RSpace
 
 # Brief overview of the document (will be used in listings) [manual entry]
 # Uncomment and populate the next line and uncomment "hide-description: true".
-#description: Short description of the document
-#hide-description: true
+description: Overview of eLabJournal and RSpace electronic laboratory notebooks available at TU Delft
+hide-description: true
 
 # Authors of the document, will not be parsed [manual entry]
 # Uncomment and populate the next lines accordingly
@@ -60,6 +60,15 @@ An electronic laboratory notebook (ELN), also called a digital lab notebook, off
 
 :::{.callout-important appearance="simple" icon="false"}
 ## {{< fa info-circle >}} Learn more
-**For instructions on getting started with RSpace and eLabJournal, along with other essential information about ELNs, visit the [TU Delft Library website's Electronic Lab Notebook page](https://www.tudelft.nl/en/library/current-topics/research-data-management/r/manage/electronic-lab-notebook).**
+
+**For instructions on getting started with RSpace and eLabJournal, along with other essential information about ELNs, visit:**
+
+- [TU Delft Library website's Electronic Lab Notebook page](https://www.tudelft.nl/en/library/current-topics/research-data-management/r/manage/electronic-lab-notebook)
+
+**Direct links:**
+
+- [TU Delft RSpace](https://rspace.tudelft.nl)
+- [TU Delft eLabJournal](https://tudelft.elabjournal.com/)
+
 :::
 

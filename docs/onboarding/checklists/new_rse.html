@@ -2,23 +2,66 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-04-22">
+<meta name="description" content="Checklist for new staff in RSE-like roles at TU Delft">
 
-<title>Tooling</title>
+<title>Checklist for new staff</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -30,22 +73,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
+<link href="../../../docs/onboarding/checklists/30-60-90.html" rel="next">
+<link href="../../../docs/onboarding/checklists/index.html" rel="prev">
 <link href="../../../docs/img/cone.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-aced932c6eb97d642153b8e218288f9f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-aced932c6eb97d642153b8e218288f9f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-aced932c6eb97d642153b8e218288f9f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-b87838516fd491c7318cc311eb8edcd8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-88ce6aaf4f35962d608b6c831ecd35b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e6a8a9ea5754752d7386ad21ff0d28a8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-88ce6aaf4f35962d608b6c831ecd35b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
@@ -82,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../../themes/custom.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -268,7 +312,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../docs/resources/courses.html"> 
-<span class="menu-text"><ins>Courses and Workshops</ins></span></a>
+<span class="menu-text">Courses and Workshops</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../docs/onboarding/index.html" aria-current="page"> 
+<span class="menu-text">Onboarding</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-community" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -292,10 +340,21 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/" title="DCC GitHub" class="quarto-navigation-tool px-1" aria-label="DCC GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/onboarding/checklists/index.html">Onboarding checklists</a></li><li class="breadcrumb-item"><a href="../../../docs/onboarding/checklists/new_rse.html">Checklist for new staff</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
   <div id="quarto-announcement" data-announcement-id="eac685495375b2cca71746dc3171a8e4" class="alert alert-success hidden"><i class="bi bi-patch-check quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p><strong>Great news!</strong> We have had a major update to our guides! Feel free to explore! If you have any feedback, please visit our <a href="https://tu-delft-dcc.github.io/CONTRIBUTING.html">contributing guidelines</a>. If you find these guides useful, <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io"><i class="fa-regular fa-star" aria-label="star"></i> us on GitHub</a>.</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
@@ -303,6 +362,111 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/onboarding/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/role.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Role of RSE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/professionalization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RSE Professionalization</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/onboarding/getting_started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting started at TU Delft</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/bookmarks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful bookmarks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/communication_channels.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Communication channels</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/onboarding/checklists/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding checklists</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/checklists/new_rse.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Checklist for new staff</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/checklists/30-60-90.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Your first 30, 60, 90 days</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/checklists/mentor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Checklist for mentor</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/onboarding/learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learning &amp; Training</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/soft_skills.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soft Skills for Research Support</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/onboarding/contacts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support Landscape</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
@@ -311,17 +475,34 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/onboarding/checklists/index.html">Onboarding checklists</a></li><li class="breadcrumb-item"><a href="../../../docs/onboarding/checklists/new_rse.html">Checklist for new staff</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Tooling</h1>
-</div>
+<h1 class="title">Checklist for new staff</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Onboarding</div>
+    <div class="quarto-category">RSE</div>
+    <div class="quarto-category">Checklist</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Last reviewed</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 22, 2026</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Last modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">April 22, 2026</p>
+    </div>
+  </div>
     
   </div>
   
@@ -330,7 +511,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<script async="" defer="" src="https://scripts.simpleanalyticscdn.com/latest.js"></script><p>🏗️ Under construction!</p>
+<script async="" defer="" src="https://scripts.simpleanalyticscdn.com/latest.js"></script><p>The following practical checklist is meant to help new staff get started. It is not meant to be exhaustive, but to provide a starting point for the onboarding process.</p>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Checklist
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox">Collect laptop and campus card</label></li>
+<li><label><input type="checkbox">Check out the intranet page <a href="https://intranet.tudelft.nl">“I’m a new employee”</a></label>
+<ul class="task-list">
+<li><label><input type="checkbox">Register for the TU Delft onboarding activities <a href="https://intranet.tudelft.nl/-/introduction-programme-for-new-staff">Introduction programme for new staff</a></label></li>
+<li><label><input type="checkbox">Finance administration (expense claims and business trips)</label></li>
+<li><label><input type="checkbox">HR administration (information on leave and holidays, reporting sick)</label></li>
+<li><label><input type="checkbox">Good to know (practical information)</label></li>
+<li><label><input type="checkbox">Information for academic staff</label></li>
+</ul></li>
+<li><label><input type="checkbox">Write an introduction text</label></li>
+<li><label><input type="checkbox">Create your email signature (you can use this <a href="https://www.tudelft.nl/en/tu-delft-corporate-design/media/email-signature">template</a>)</label></li>
+<li><label><input type="checkbox">Write a short bio</label></li>
+<li><label><input type="checkbox">(Optional) Sign up for Carpentries Instructor Training</label></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-info-circle" aria-label="info-circle"></i> Copy to GitHub issue
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Checklist</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Collect laptop and campus card</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Check out the intranet page <span class="co">[</span><span class="ot">"I'm a new employee"</span><span class="co">](https://intranet.tudelft.nl)</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="va">[ ]</span> Register for the TU Delft onboarding activities <span class="co">[</span><span class="ot">Introduction programme for new staff</span><span class="co">](https://intranet.tudelft.nl/-/introduction-programme-for-new-staff)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="va">[ ]</span> Finance administration (expense claims and business trips)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="va">[ ]</span> HR administration (information on leave and holidays, reporting sick)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="va">[ ]</span> Good to know (practical information)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="va">[ ]</span> Information for academic staff</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Write an introduction text </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Create your email signature (you can use this <span class="co">[</span><span class="ot">template</span><span class="co">](https://www.tudelft.nl/en/tu-delft-corporate-design/media/email-signature)</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Write a short bio </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> (Optional) Sign up for Carpentries Instructor Training</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
 
 
 
@@ -748,6 +983,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/onboarding/checklists/index.html" class="pagination-link" aria-label="Onboarding checklists">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Onboarding checklists</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/onboarding/checklists/30-60-90.html" class="pagination-link" aria-label="Your first 30, 60, 90 days">
+        <span class="nav-page-text">Your first 30, 60, 90 days</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

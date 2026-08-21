@@ -21,8 +21,8 @@ title: Software management plan
 
 # Brief overview of the document (will be used in listings) [manual entry]
 # Uncomment and populate the next line and uncomment "hide-description: true".
-#description: Short description of the document
-#hide-description: true
+description: Creating a software management plan
+hide-description: true
 
 # Authors of the document, will not be parsed [manual entry]
 # Uncomment and populate the next lines accordingly
@@ -66,7 +66,7 @@ The [Intermediate Research Software Development](https://carpentries-incubator.g
 - [Software Development Plan](https://doit.software/blog/software-development-plan): A quick start on building software development plans.
 - [Software Development Life Cycle](https://resources.github.com/software-development/what-is-sdlc/): A guide on how to follow the software development lifecycle (SDLC) systematically, and different SDLC methodologies.
 - [Writing Software Management Plans](https://www.software.ac.uk/software-management-plans): A guide from the Software Sustainability Institute on how to write research software management plans.
-* [Software Management Plans documentation](https://forschungsdaten.info/praxis-kompakt/english-pages/software-management-plans/): A detailed documentation about software management plans, including up-to-date templates.
+* [Software Management Plans documentation](https://forschungsdaten.info/fdm-allgemein/ethik-und-gute-wissenschaftliche-praxis/english-pages/software-management-plans): A detailed documentation about software management plans, including up-to-date templates.
 * [A Framework for Understanding Research Software](https://doi.org/10.5281/zenodo.4988277 ): A proposal for categorizing different types of research software, and a framework for sustaining research software.
 :::
 

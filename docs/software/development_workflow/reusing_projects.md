@@ -21,8 +21,8 @@ title: Project templates and reusability
 
 # Brief overview of the document (will be used in listings) [manual entry]
 # Uncomment and populate the next line and uncomment "hide-description: true".
-#description: Short description of the document
-#hide-description: true
+description: How to reuse existing projects and templates
+hide-description: true
 
 # Authors of the document, will not be parsed [manual entry]
 # Uncomment and populate the next lines accordingly
@@ -64,7 +64,7 @@ You can turn an existing repository into a template, so you and others can gener
 
 ### Cookiecutter for Python
 
-[Cookiecutter](https://www.cookiecutter.io/) creates Python projects from project templates. The advantage of using Cookiecutter is that new projects are set up quickly from a standardized template structure and can include everything needed to get started on a project, such as directory layouts, sample code, and even integrations with tools and services.
+[Cookiecutter](https://pypi.org/project/cookiecutter/) creates Python projects from project templates. The advantage of using Cookiecutter is that new projects are set up quickly from a standardized template structure and can include everything needed to get started on a project, such as directory layouts, sample code, and even integrations with tools and services.
 
 
 :::{.callout-tip appearance="simple" icon="false"}

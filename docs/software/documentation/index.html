@@ -2,18 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-02-19">
+<meta name="description" content="Overview of software documentation practices and tools">
 
 <title>Documentation</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -36,19 +43,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../docs/img/cone.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-aced932c6eb97d642153b8e218288f9f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-aced932c6eb97d642153b8e218288f9f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-aced932c6eb97d642153b8e218288f9f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-b87838516fd491c7318cc311eb8edcd8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-88ce6aaf4f35962d608b6c831ecd35b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e6a8a9ea5754752d7386ad21ff0d28a8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-88ce6aaf4f35962d608b6c831ecd35b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
@@ -271,7 +277,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../docs/resources/courses.html"> 
-<span class="menu-text"><ins>Courses and Workshops</ins></span></a>
+<span class="menu-text">Courses and Workshops</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/onboarding/index.html"> 
+<span class="menu-text">Onboarding</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-community" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -295,6 +305,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/" title="DCC GitHub" class="quarto-navigation-tool px-1" aria-label="DCC GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -1005,10 +1016,10 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-          <li class="sidebar-item">
- <span class="menu-text"><br></span>
-  </li>
       </ul>
+  </li>
+        <li class="sidebar-item">
+ <span class="menu-text"><br></span>
   </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
@@ -1078,22 +1089,22 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <div class="content-block">
 <div class="features">
-<section id="readme" class="level3 feature">
-<h3 class="anchored" data-anchor-id="readme"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> README</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b2d6f70656e2d726561646572203e7d7d-readme" class="level3 feature">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b2d6f70656e2d726561646572203e7d7d-readme"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> README</h3>
 <p>How to write a good README.</p>
 <div class="learn-more">
 <p><a href="../../../docs/software/documentation/write_a_readme.html">Learn more »</a></p>
 </div>
 </section>
-<section id="licenses" class="level3 feature">
-<h3 class="anchored" data-anchor-id="licenses"><i class="fa-solid fa-scale-balanced" aria-label="scale-balanced"></i> Licenses</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-licenses" class="level3 feature">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-licenses"><i class="fa-solid fa-scale-balanced" aria-label="scale-balanced"></i> Licenses</h3>
 <p>Apply an open-source license.</p>
 <div class="learn-more">
 <p><a href="../../../docs/software/documentation/license.html">Learn more »</a></p>
 </div>
 </section>
-<section id="citation" class="level3 feature">
-<h3 class="anchored" data-anchor-id="citation"><i class="fa-solid fa-quote-left" aria-label="quote-left"></i> CITATION</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612071756f74652d6c656674203e7d7d-citation" class="level3 feature">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612071756f74652d6c656674203e7d7d-citation"><i class="fa-solid fa-quote-left" aria-label="quote-left"></i> CITATION</h3>
 <p>Cite your software.</p>
 <div class="learn-more">
 <p><a href="../../../docs/software/documentation/citation.html">Learn more »</a></p>
@@ -1107,36 +1118,36 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <div class="content-block">
 <div class="features">
-<section id="code-documentation" class="level3 feature">
-<h3 class="anchored" data-anchor-id="code-documentation"><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> Code Documentation</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c6170746f702d636f6465203e7d7d-code-documentation" class="level3 feature">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c6170746f702d636f6465203e7d7d-code-documentation"><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> Code Documentation</h3>
 <p>Documenting your codebase.</p>
 <div class="learn-more">
 <p><a href="../../../docs/software/documentation/code_documentation/code_documentation.html">Learn more »</a></p>
 </div>
 </section>
-<section id="tooling" class="level3 feature">
-<h3 class="anchored" data-anchor-id="tooling"><i class="fa-solid fa-screwdriver-wrench" aria-label="screwdriver-wrench"></i> Tooling</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073637265776472697665722d7772656e6368203e7d7d-tooling" class="level3 feature">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073637265776472697665722d7772656e6368203e7d7d-tooling"><i class="fa-solid fa-screwdriver-wrench" aria-label="screwdriver-wrench"></i> Tooling</h3>
 <p>Deploy your documentation.</p>
 <div class="learn-more">
 <p><a href="../../../docs/software/documentation/tooling.html">Learn more »</a></p>
 </div>
 </section>
-<section id="hosting" class="level3 feature">
-<h3 class="anchored" data-anchor-id="hosting"><i class="fa-solid fa-globe" aria-label="globe"></i> Hosting</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120676c6f6265203e7d7d-hosting" class="level3 feature">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120676c6f6265203e7d7d-hosting"><i class="fa-solid fa-globe" aria-label="globe"></i> Hosting</h3>
 <p>Host your documentation.</p>
 <div class="learn-more">
 <p><a href="../../../docs/software/documentation/hosting.html">Learn more »</a></p>
 </div>
 </section>
-<section id="contributing-guidelines" class="level3 feature">
-<h3 class="anchored" data-anchor-id="contributing-guidelines"><i class="fa-solid fa-code-merge" aria-label="code-merge"></i> Contributing Guidelines</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6d65726765203e7d7d-contributing-guidelines" class="level3 feature">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6d65726765203e7d7d-contributing-guidelines"><i class="fa-solid fa-code-merge" aria-label="code-merge"></i> Contributing Guidelines</h3>
 <p>Define how to contribute to your project.</p>
 <div class="learn-more">
 <p><a href="../../../docs/software/documentation/contributing_guidelines.html">Learn more »</a></p>
 </div>
 </section>
-<section id="code-of-conduct" class="level3 feature">
-<h3 class="anchored" data-anchor-id="code-of-conduct"><i class="fa-solid fa-handshake-angle" aria-label="handshake-angle"></i> Code of Conduct</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e647368616b652d616e676c65203e7d7d-code-of-conduct" class="level3 feature">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e647368616b652d616e676c65203e7d7d-code-of-conduct"><i class="fa-solid fa-handshake-angle" aria-label="handshake-angle"></i> Code of Conduct</h3>
 <p>Set expectations for respectful, inclusive collaboration among contributors.</p>
 <div class="learn-more">
 <p><a href="../../../docs/software/documentation/code_of_conduct.html">Learn more »</a></p>
